@@ -9,19 +9,27 @@ const Carrusel: React.FC = () => {
           {/* Aquí puedes mapear sobre tu lista de proyectos y mostrar cada uno */}
           <div className="bg-gray-200 p-4 flex flex-col items-center justify-center">
             <img src="./img/evento.png" alt="Proyecto 1" className="w-full mb-2" />
-            <h3 className="text-lg font-bold">The Planner</h3>
+            <h3 className="text-lg font-bold">Eventos</h3>
           </div>
           <div className="bg-gray-200 p-4 flex flex-col items-center justify-center">
-            <img src="./img/bazar.png" alt="Proyecto 1" className="w-full mb-2" />
+            <img src="./img/bazar.png" alt="Proyecto 2" className="w-full mb-2" />
             <h3 className="text-lg font-bold">Bazar Tech</h3>
           </div>
           <div className="bg-gray-200 p-4 flex flex-col items-center justify-center">
-            <img src="./img/evento.png" alt="Proyecto 1" className="w-full mb-2" />
-            <h3 className="text-lg font-bold">Proyecto 1</h3>
+            <img src="./img/danyweb.png" alt="Proyecto 3" className="w-full mb-2" />
+            <h3 className="text-lg font-bold">Diseño Web</h3>
           </div>
           <div className="bg-gray-200 p-4 flex flex-col items-center justify-center">
-            <img src="./img/evento.png" alt="Proyecto 1" className="w-full mb-2" />
-            <h3 className="text-lg font-bold">Proyecto 1</h3>
+            <img src="./img/petfood.png" alt="Proyecto 4" className="w-full mb-2" />
+            <h3 className="text-lg font-bold">Pet Food</h3>
+          </div>
+          <div className="bg-gray-200 p-4 flex flex-col items-center justify-center">
+            <img src="./img/solyluna.png" alt="Proyecto 5" className="w-full mb-2" />
+            <h3 className="text-lg font-bold">Casa de Campo</h3>
+          </div>
+          <div className="bg-gray-200 p-4 flex flex-col items-center justify-center">
+            <img src="./img/Cinenema.jpg" alt="Proyecto 6" className="w-full mb-2" />
+            <h3 className="text-lg font-bold">Cinema</h3>
           </div>
           {/* Otros proyectos */}
         </div>
