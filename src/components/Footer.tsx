@@ -8,8 +8,8 @@ const Footer: React.FC = () => {
           &copy; {new Date().getFullYear()} Mi Portfolio
         </div>
         <div>
-          <a href="#" className="mr-4">Linkedin</a>
-          <a href="#">Github</a>
+          <a href="https://www.linkedin.com/in/daniel-alberto-rodriguez/" className="mr-4">Linkedin</a>
+          <a href="https://github.com/danydeitu/">Github</a>
         </div>
       </div>
     </footer>
