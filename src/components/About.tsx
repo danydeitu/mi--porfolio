@@ -12,7 +12,7 @@ const Acerca: React.FC = () => {
           <p className="text-lg">
           Soy Desarrollador web Full Stack y Estudiante de Telecomunicaciones ,
 
-Realizo Trabajos de diseño y desarrollo de Paginas Web , servicios web ,de escritorio , apps ,
+Realizo Trabajos de diseño y desarrollo de Paginas Web , servicios web ,de escritorio , apps , con tecnologias como React, Typescript, Node, Javascript, Python ,Tailwind.
 
 Apasionado por la Informática , me gusta trabajar en equipo y aprender nuevas tecnologias.
           </p>
