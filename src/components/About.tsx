@@ -2,7 +2,7 @@ import React from "react";
 
 const Acerca: React.FC = () => {
   return (
-    <section id="acerca" className="py-16">
+    <section id="acerca" className="py-1">
       <div className="container mx-auto flex flex-col md:flex-row items-center">
         <div className="md:w-1/2 md:order-2 md:text-right md:pr-8">
           <img src="./img/mifoto.jpg" alt="Descripción de la imagen" className="w-full md:w-auto" />
