@@ -8,7 +8,7 @@ const Acerca: React.FC = () => {
           <img src="./img/mifoto.jpg" alt="Descripción de la imagen" className="w-full md:w-auto" />
         </div>
         <div className="md:w-1/2 md:order-1">
-          <h2 className="text-3xl font-bold mb-4">Acerca de mí</h2>
+          <h2 className="text-3xl font-bold mb-4 text-center">Acerca de mí</h2>
           <p className="text-lg">
           Soy Desarrollador web Full Stack y Estudiante de Telecomunicaciones ,
 
