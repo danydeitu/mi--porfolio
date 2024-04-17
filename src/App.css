@@ -1,10 +1,28 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+/* Otros estilos personalizados */
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: .5rem;
   text-align: center;
- 
 }
+/* Estilos modo dark */
+body.dark-mode {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+/* Estilos modo dark 
+body.dark {
+  --background-color: #1f1f1f;
+  --text-color: #ffffff;
+}
+
+body.dark button {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+*/

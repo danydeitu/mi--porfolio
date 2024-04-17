@@ -1,30 +1,53 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Navbar from './components/Navbar';
 import About from './components/About';
 import Footer from './components/Footer';
 import Carrusel from './components/Carrusel';
+import './App.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
+const App: React.FC = () => {
+  const [theme, setTheme] = useState(() => {
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  });
 
-function App() {
-  const [darkMode, setDarkMode] = useState(false);
-
-  const toggleDarkMode = () => {
-    setDarkMode(prev => !prev);
+  const toggleTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+    localStorage.setItem('theme', newTheme);
   };
 
+
+useEffect(() => {
+  document.body.classList.remove('dark-mode', 'light-mode');
+  document.body.classList.add(theme + '-mode');
+}, [theme]);
+
+
+  useEffect(() => {
+    document.documentElement.classList.remove('dark', 'light');
+    document.documentElement.classList.add(theme);
+  }, [theme]);
+
   return (
-    <div className={`transition-colors duration-500 ${darkMode ? "dark" : ""}`}>
-      <Navbar />
+    <div className="bg-gray-100 dark:bg-gray-800 dark:text-white">
+
+      <Navbar theme={theme}/>
+      <div className="fixed bottom-4 right-4">
+        <button
+          className="bg-slate-200 px-4 py-2 rounded hover:bg-slate-300 dark:bg-slate-950 dark:text-white dark:hover:bg-slate-900"
+          onClick={toggleTheme}
+        >
+          <FontAwesomeIcon icon={theme === 'light' ? faMoon : faSun} className="mr-2" />
+          Cambiar tema
+        </button>
+      </div>
       <About />
       <Carrusel />
       <Footer />
-      <button
-        className="fixed bottom-4 right-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-        onClick={toggleDarkMode}
-      >
-        {darkMode ? "Desactivar" : "Activar"} Modo Oscuro
-      </button>
+  
     </div>
   );
-}
+};
 
 export default App;

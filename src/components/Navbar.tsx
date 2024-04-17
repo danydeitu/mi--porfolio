@@ -1,8 +1,13 @@
 import React from "react";
 
-const Navbar: React.FC = () => {
+interface NavbarProps {
+  theme: string;
+}
+
+const Navbar: React.FC<NavbarProps>=({theme})  => {
   return (
-    <nav className="bg-blue-300 text-black py-4">
+    <nav className={`bg-blue-300 text-black py-4 ${theme === 'dark' ? 'dark:bg-black dark:text-white' : ''}`}>
+
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-x font-bold"><a href="#/">Desarrollador Full Stack </a></div>
        
