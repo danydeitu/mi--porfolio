@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
       {isVisible && (
-        <div className="fixed bottom-4 feft-4" onClick={scrollToTop}>
+        <div className="fixed bottom-4 left-4" onClick={scrollToTop}>
           <FaArrowUp size={24} />
         </div>
       )}
