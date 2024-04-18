@@ -6,6 +6,7 @@ import Carrusel from './components/Carrusel';
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
+
 const App: React.FC = () => {
   const [theme, setTheme] = useState(() => {
     return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
