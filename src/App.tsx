@@ -34,6 +34,10 @@ useEffect(() => {
     <div className="bg-gray-100 dark:bg-gray-800 dark:text-white">
 
       <Navbar theme={theme}/>
+  
+      <About />
+      <Carrusel />
+      <Footer />
       <div className="fixed bottom-4 right-4">
         <button
           className="bg-slate-200 px-4 py-2 rounded hover:bg-slate-300 dark:bg-slate-950 dark:text-white dark:hover:bg-slate-900"
@@ -43,10 +47,6 @@ useEffect(() => {
           Cambiar tema
         </button>
       </div>
-      <About />
-      <Carrusel />
-      <Footer />
-  
     </div>
   );
 };
